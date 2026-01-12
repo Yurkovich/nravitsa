@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Involve';
+  src: local('Involve Regular'), local('Involve-Regular'),
+    url('../fonts/Involve-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Involve';
+  src: local('Involve Medium'), local('Involve-Medium'),
+    url('../fonts/Involve-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

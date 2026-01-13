@@ -143,6 +143,10 @@
     flex-direction: column;
   }
 
+  .slider {
+    border-radius: 40px;
+  }
+
   .slides-container {
     height: auto;
   }
@@ -165,6 +169,7 @@
     max-width: 274px;
     max-height: 352px;
     align-self: center;
+    border-radius: 29px;
   }
 
   .about .slider .prev,
@@ -194,6 +199,7 @@
 
   .about__img {
     padding: 0 24px;
+    border-radius: 21px;
   }
 
   .about__text--mobile {

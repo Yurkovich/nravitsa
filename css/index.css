@@ -148,6 +148,10 @@
   height: auto !important;
 }
 
+.about .dots {
+  visibility: hidden;
+}
+
 /* ==================== */
 /* ===== PROJECTS ===== */
 /* ==================== */
@@ -375,6 +379,10 @@
   .about .slider .next {
     display: none;
   }
+
+  .about .dots {
+  visibility: visible;
+}
 }
 
 @media (max-width: 768px) {

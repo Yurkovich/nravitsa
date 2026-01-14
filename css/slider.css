@@ -62,22 +62,29 @@
 
 .dots {
   position: absolute;
-  bottom: 10px;
+  bottom: -5em;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 8px;
-  visibility: hidden;
+  gap: 20px;
+  overflow: visible;
+  padding: 10px;
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  width: clamp(1.4rem, 2.5vw, 3.2rem);
+  height: clamp(1.6rem, 2.5vw, 3.3rem);
   cursor: pointer;
+  background: url(../media/shared/icons/heart.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: visible;
 }
 
 .dot.active {
-  background: white;
+  background: url(../media/shared/icons/heart-active.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: visible;
 }

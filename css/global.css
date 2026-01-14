@@ -57,7 +57,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* .bg-video {
+.bg-video {
   position: fixed;
   inset: 0;
   width: 100%;
@@ -65,9 +65,9 @@ body {
   object-fit: cover;
   z-index: -1;
   pointer-events: none;
-} */
+}
 
-.bg-animated {
+/* .bg-animated {
   position: fixed;
   inset: -20%;
   background-image: url("../media/shared/decorations/bg.png");
@@ -78,7 +78,7 @@ body {
   animation: bgFloat 15s ease-in-out infinite alternate;
   z-index: -1;
   pointer-events: none;
-}
+} */
 
 @keyframes bgFloat {
   0% {

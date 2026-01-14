@@ -304,15 +304,18 @@
 
 .modal {
   position: fixed;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   margin-left: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%);
   top: 2em;
   height: 100dvh;
   width: 100dvw;
-  z-index: 15;
+  z-index: 20;
+  max-width: 900px;
+  margin-left: auto;
 }
 
 .modal__inner {
@@ -325,7 +328,7 @@
 }
 
 .modal__title {
-  font-size: 40px;
+  font-size: clamp(2rem, 3vw, 4rem);
   width: fit-content;
   margin-bottom: clamp(2rem, 3vw, 4rem);
 }
@@ -342,17 +345,27 @@
   width: 100%;
   border-radius: 42px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .modal__media img {
   width: 100%;
-  border-radius: 42px;
-  overflow: hidden;
 }
 
-.modal__subtitle {}
+.modal__subtitle {
+  width: fit-content;
+  font-size: clamp(1.6rem, 2.5vw, 3.2rem);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
 
-.modal__text {}
+.modal__text {
+  font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+}
+
+.modal--open .modal {
+  display: flex;;
+}
 
 
 
@@ -433,6 +446,15 @@
   .box__text {
     bottom: 2em;
     right: 2em;
+  }
+
+  .modal__inner {
+    padding: 30px 20px;
+    border-radius: 40px;
+  }
+
+  .modal__media {
+    border-radius: 20px;
   }
 }
 

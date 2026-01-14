@@ -116,8 +116,8 @@
   border-radius: 37px;
   padding: 1px;
   background: linear-gradient(to bottom, #F00, #FFB8DF);
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -146,6 +146,47 @@
 
 .about__img--gif {
   height: auto !important;
+}
+
+/* ==================== */
+/* ===== PROJECTS ===== */
+/* ==================== */
+
+.projects {}
+
+.projects__inner {
+  display: grid;
+  gap: clamp(1rem, 2vw, 2rem);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 410px 290px 260px 250px 250px;
+  grid-template-areas:
+    "box1 box1 box1 box1 box2 box2"
+    "box3 box3 box4 box4 box5 box5"
+    "box3 box3 box6 box6 box6 box6"
+    "box7 box7 box7 box8 box8 box8"
+    "box9 box9 box10 box10 box11 box11";
+}
+
+.box {
+  position: relative;
+  padding: clamp(1rem, 2vw, 1.8rem);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25), inset 0px 4px 4px 0px rgba(255, 255, 255, 0.26);
+  backdrop-filter: blur(7px);
+  border-radius: 50px;
+}
+
+.box__text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 36px;
+  overflow: hidden;
 }
 
 @media (max-width: 1195px) {
@@ -199,6 +240,28 @@
   .about .slider .next {
     display: none;
   }
+
+
+  .projects__inner {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 410px 290px 260px 250px 250px 200px 300px;
+    grid-template-areas:
+      "box1 box1 box1 box2 box2"
+      "box3 box3 box4 box4 box4"
+      "box3 box3 box5 box5 box5"
+      "box6 box6 box6 box6 box6"
+      "box7 box7 box7 box8 box8"
+      "box9 box9 box10 box10 box10"
+      "box11 box11 box11 box11 box11";
+  }
+
+  .box {
+    border-radius: 40px;
+  }
+
+  .box img {
+    border-radius: 30px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -229,4 +292,11 @@
     align-self: center;
     margin-top: 10%;
   }
+
+
+  .projects__inner {
+    grid-template-rows: 180px 150px 150px 120px 150px 150px 150px;
+  }
+
+
 }

@@ -180,7 +180,7 @@
   right: 10%;
   bottom: 1.5em;
   color: #FFF;
-  padding: clamp(1rem, 2.5vw, 3rem);
+  padding: clamp(1rem, 2vw, 2rem) clamp(1rem, 2.5vw, 3rem);
   width: fit-content;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 43px;
